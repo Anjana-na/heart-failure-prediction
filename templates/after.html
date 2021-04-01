@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>app</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='main.css')}}">
+
+
+</head>
+
+<body>
+	<center>
+		<h1>Results :</h1>
+		 {%if data == 0%}
+		 <div class="normal">
+		 	<h2>Your heart failure risk is not serious.</h2>
+		 	<img src="static/fail.jpg" alt="heart" width="300" height="300">
+		 	</div>
+
+		 	{%else%}
+		 		<h2>Death is likely to occur.</h2>
+		 		<img src="static/heart.jpg" alt="failure" width="300" height="300">
+		 	</div>
+
+		 	 {%endif%}
+		 	  <br><br>
+
+		 	  <a href='/'>go back to home page</a>
+
+
+
+
+	</center>
+
+</body>
+</html>

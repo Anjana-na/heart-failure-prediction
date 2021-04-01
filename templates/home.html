@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>app</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+
+</head>
+<body>
+	<center>
+		<h1>Heart Failure Prediction</h1><br>
+		<form method="POST", action="{{url_for('home')}}">
+			 <label for="lname">enter your age: </label>
+
+			<input type="text" name="age", placeholder="age", required="required"><br><br>
+			 <label for="anaimea">anaimea: </label>
+			  <select id="anaimea" name="anaimea">
+      <option value="0">no anaimea</option>
+      <option value="1">anaimea</option></select><br><br>
+
+      <label for="creatinine phosphokinase">creatinine phosphokinase: </label>
+      <input type="text" name="creatinine phosphokinase", placeholder="creatinine phosphokinase", required="required"><br><br>
+      <label for="diabetes">diabetes: </label>
+      <select id="diabetes" name="diabetes">
+      	<option value="0">no diabetes</option>
+      	<option value="1">diabetes</option></select><br><br>
+      	<label for="ejection fraction">ejection fraction: </label>
+      	<input type="text" name="ejection fraction", placeholder="ejection fraction", required="required"><br><br>
+      	<label for="high blood pressure">high blood pressure: </label>
+      	<select id="high blood pressure" name="high blood pressure">
+      		<option value="0">no high blood pressure</option>
+      		<option value="1">high blood pressure</option></select><br><br>
+      		<label for="platelets">platelets: </label>
+
+      		<input type="text" name="platelets", placeholder="platelets", required="required"><br><br>
+      		<label for="serum creatinine">serum creatinine: </label>
+      		<input type="text" name="serum creatinine", placeholder="serum creatinine", required="required"><br><br>
+      		<label for="serum sodium">serum sodium: </label>
+      		<input type="text" name="serum sodium", placeholder="serum sodium", required="required"><br><br>
+      		<label for="sex">sex: </label>
+      		<select id="sex" name="sex">
+      			<option value="0">female</option>
+      			<option value="1">male</option></select><br><br>
+      			<label for="smoking">smoking: </label>
+      			<select id="smoking" name="smoking">
+      				<option value="0">no smoking</option>
+      				<option value="1">smoking</option></select><br><br>
+      				<label for="time">time: </label>
+      				<input type="text" name="time", placeholder="time", required="required"><br><br>
+      				 <input type="submit" , value='predict!' >
+
+
+      
+   
+
+
+			
+		</form>
+	</center>
+
+</body>
+</html>
